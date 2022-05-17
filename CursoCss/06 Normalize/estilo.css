@@ -1,0 +1,10 @@
+/* El normalize se utiliza para normalizar aspectos esteticos de fuentes, bordes y otros, ya que cada navegador tiene su propio formato inicial.
+Para utilizarlo debes descargarlo escribiendo normalize css en el buscador y entrar en la primera búsqueda. Pincha en descargar y "guarda como", justo en la pantalla de código. Guardalo en la carpeta de tu index y utiliza la función <link rel="stylesheet" type="text/css" href="normalize.css"> para que cargue el archivo css.*/
+
+/*Tiene muchos usos, por ejemplo:*/
+
+/*AJUSTAR LA PANTALLA PARA QUE LAS IMAGENES EN MOVILES SE AJUSTEN AL 100%: entra a normalize, busca images y debajo de border, escribe "max-width: 100%" */
+
+/*BORDER BOX: Para que las cajas no se expandan por el contenido interior y solo se limiten a las medidas especificadas:
+Escribiremos
+{box-sizing: border-box; padding: 0; margin: 0;}*/

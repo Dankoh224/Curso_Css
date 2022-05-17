@@ -1,0 +1,39 @@
+/*Elementos en Linea y elementos en bloque*/
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+/*Los elementos en linea y los elementos en bloque tienen propiedades:*/
+/* 1) A los elementos en linea NO se le spuede dar height ni width.*/
+/* 2) A los elementos en bloque SI se les puede dar height y width.*/
+h2 {
+    display: inline;
+    height: 100px;
+    width: 600px;
+    /*PADDING: espacio que se encuentra entre el borde de la caja y el texto de la caja.*/
+    background-color: red;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+p {
+    /*En el padding, si se quiere dar la misma medida arriba, abajo, a la derecha e izuierda, hay que escribir padding: x px*/
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 50px;
+    /*Tambien podemos centrar usando el siguiente comando:*/
+    text-align: center;
+    box-sizing: border-box;
+}
+
+b {
+    background-color: blueviolet;
+    /*Para darle arriba y abajo (eje Y) 20 pixeles y a los lados (eje X) 40 pixeles, hay que escribir 20px y 40px (en ese orden).*/
+    padding: 20px 40px;
+    /*También se puede escribir en linea 4 tamaños usando un orden "horario".*/
+}

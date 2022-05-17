@@ -1,0 +1,17 @@
+/* La metodología BEM, sirve para ordenar todo en clases para no generar muchos conflictos.  De esta forma conocemos que elementos estamos seleccionando a partir del nombre de la clase. Por ejemplo, en la línea 10 del html, el contenedor que tenemos en el body es div y su clase la hemos llamado form. Ahora, todos los elementos que ingresemos a continuación, los llamaremos form, pero a continuación le agregaremos dos guiones bajos seguidos del nombre del elemento, en este caso input. Finalmente, para darles color, solo escribimos lo siguiente:*/
+.form__input {
+    color: red;
+}
+
+/* Si por otra parte, tuvieramos muchos input, pero queremos hacer cambios solo a uno de ellos, por ejemplo, al primero de la lista (línea 16), solo tendríamos que agregarle lo siguiente: */
+.formulario__input:first-child {
+    color: blue;
+}
+/* Sin embargo, para esto también podemos usar otra fórmula de la metodología BEM y consiste en agregar dos guiones medios al elemento que vamos a formatear  (cambiaremos el color del último input en la línea 20) para luego escribir: */
+.formulario__input--lalalelalala {
+    color: red;
+}
+/*Finalmente, si tuvieramos una situación como en la línea 23, dónde se aprecia un div y dentro un p y dentro un h2, llamaremos a la última clase "titulo__p-h2 y escribiremos:*/ 
+.titulo__p-h2 {
+    color: magenta;
+}

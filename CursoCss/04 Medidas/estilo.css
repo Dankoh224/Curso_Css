@@ -1,0 +1,43 @@
+/* En este apartado podemos ver que existen muchas formas de dar tamaño al texto de nuestra página web. Por ejemplo:*/
+.titulo__h1 {
+    font-size: 60px;
+}
+
+.titulo__h1 {
+    font-size: 4cm;
+}
+
+.titulo__h1 {
+    font-size: 50mm;
+}
+
+.titulo__h1 {
+    font-size: 16pt;
+}
+
+/* MEDIDAS RELATIVAS: ¿qué sucedería si queremos adaptar nuestra página a versiones móviles? Usaremos las MEDIDAS RELATIVAS (RESPONSIVE DESIGN). En caso contrario, nuestra página no se adecuadará a celulares o tables y quedará feísima.
+EM: Una de estas medidas relativas se llama EM y 1em=16px por defecto. Sin embargo es posible cambiar esta medida por herencia, es decir, el contenedor del elemento es quien definirá el valor del em. Ejemplo:*/
+.titulo {
+    font-size: 20px;
+}
+/* Esto lo que hace es definir 1em=20px, por lo tanto si:*/
+.titulo__h1 {
+    font-size: 2em;
+}
+/* Significa que 2em=40px*/
+
+/*VIEWPORT: medida relativa a la ventana. Para explicar esta parte primero eliminaremos los márgenes del titulo:*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+/* Luego cambiaremos la medida del texto a 16 píxeles y el fondo a color negro:*/
+.titulo {
+    font-size: 16px;
+    background: black;
+    /* Y ahora veremos WIDTH (largo):*/
+    width: 50vw; /* Esto me está dando el 50% de la pantalla en horizontal.*/
+    height: 40vh; /* Esto me está dando el 40% de la pantalla en vertical.*/
+
+
+}

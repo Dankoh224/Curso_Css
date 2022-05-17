@@ -1,0 +1,15 @@
+.lero-lero {
+    font-size: 5em; /*Agranda y achica la letra*/
+    font-family: 'Water Brush', cursive; /*da fuente a una letra. Existe la posibilidad de descargar fuentes en "google fonts" y para ello entras a una de las fuentes que te gustan*/
+    line-height: 2; /*Agranda el espacio que contiene al texto*/
+    font-weight: 100; /*Engrosa y adelgaza el ancho de la fuente*/
+    color : red
+}
+
+.muero {
+    font-size: 5em; /*Agranda y achica la letra*/
+    font-family: 'Tapestry', cursive; /*da fuente a una letra. Existe la posibilidad de descargar fuentes en "google fonts" y para ello entras a una de las fuentes que te gustan*/
+    line-height: 2; /*Agranda el espacio que contiene al texto*/
+    font-weight: 100; /*Engrosa y adelgaza el ancho de la fuente*/
+    color : blue
+}

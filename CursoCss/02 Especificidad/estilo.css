@@ -1,0 +1,21 @@
+/* LA ESPECIFICIDAD: es en otras palabras, la especificidad es la jerarquía en la que css selecciona los estilos que va a mostrar en la página.
+La jerarquía es:
+1) !important
+2) Estilos en línea
+3) ID
+4) Clases, pseudo-clases y atributos.
+5) Elementos y pseudo-elementos
+
+Ejemplo: A pesar de que .perrito es el último código escrito, el identificador wacho tiene mayor jerarquía, por lo tanto, se queda todo de color rojo.*/
+#wacho {
+    color: red;
+}
+
+* {
+    color: blue;
+}
+
+.perrito {
+    color: green;
+}
+

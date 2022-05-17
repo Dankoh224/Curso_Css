@@ -1,0 +1,14 @@
+h2 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 60px;
+    background-color: red;
+    display: inline-block;
+    margin: 10px 30px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 7px groove grey;
+    box-shadow: 10px 10px 30px 20px black;
+    text-shadow: 2px 2px 10px white;
+    transform: rotate(-5deg);
+
+}

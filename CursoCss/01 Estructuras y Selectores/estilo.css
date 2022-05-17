@@ -1,0 +1,42 @@
+/*Primero veremos algo llamado SELECTOR. Estos selectors son propiedades que se aplican a nuestra página. Lo selectores son:
+1) Universles:
+2) De tipo:
+3) Clases
+4) ID
+5) Por atributo
+6) Descendiente
+7) PseudoClases 
+*/
+/* UNIVERSAL: se aplica a toda la página. */
+* {
+    color: black;
+}
+/* DE TIPO: se aplica a un tipo de etiqueta. por ejemplo, si agregamos a h1 y a button quedaran azules.:*/
+h1, button {
+    color: blue;
+}
+/* CLASES: se aplica a una clase determinada, para eso iremos a la línea 10 y 12 del index para darle un atributo a h2 y a h3. Luego de eso escribimos:*/
+.titulo_h2 {
+    color: green;
+}
+/* ID (identicador): es el atributo identificador. Este caso es muy parecido al anterior, con la diferencia que el ID debería ser el nombre único de una etiqueta, por lo tanto no debería repetirse. Ahora iremos a la línea 16 del index para darle un atributo ID al párrafo.*/
+#parrafo1 {
+    color: yellow;
+}
+/* POR ATRIBUTO: podemos inventar un atributo cualquiera para una etiqueta, una vez creado el atributo (), escribimos lo siguiente:*/
+[pepito="alohomora"] {
+    color: orange;
+}
+/* DESCENDIENTE: este tipo se relaciona con los contenederos de información, es decir, si dentro de un h2 tenemos un p (linea 22), escribimos primero su contenedor y luego el interior:*/
+h2 span  {
+    color: salmon;
+}
+/* Esta forma de dar estilo también se puede hacer con las clases (linea 26): */
+.prueba b{
+    color: magenta
+}
+/* PSEUDO CLASE: se utilizan para que el texto cambie su color cuando el cursor del mouse pasa por él:*/
+b:hover {
+    color: red
+}
+

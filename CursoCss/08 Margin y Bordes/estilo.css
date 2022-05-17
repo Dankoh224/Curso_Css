@@ -1,0 +1,17 @@
+* {
+    font-weight: 100;
+    font-size: 30px;
+    font-family: Georgia;
+}
+
+h2 {
+    display: inline-block;
+    background-color: red;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 4%;
+    border: 20px outset blue /* Los bordes pueden ser dashed (punteado), double (bordes dobles), solid (solido), dotted (circuleado), groove y ridge (doble e intercalado), inset (intercalado grueso)  etc*/ 
+
+}

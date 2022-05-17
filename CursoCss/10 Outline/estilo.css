@@ -1,0 +1,42 @@
+/* OUTLINE: es una propiedad para hacer que los bordes no afecten a las medidas de una caja (es una especie de resaltador)*/
+* {
+    font-family: 'Oleo Script', cursive;
+    font-weight: 0;
+}
+
+div {
+    display: inline-block;
+}
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    background-color: red;
+    /*margin: auto;*/ /*Centra nuestras cajas.*/
+    outline: 4px  black ; /* Por defecto, "box sizing" viene como "content box, lo que hace que los bordes se posicionen fuera de la caja. Sin embargo, el "border box", permite que la caja no cambie de tamaño a pesar de que se agregue un borde."*/ 
+} 
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    font-size: 25px;
+    /*margin: auto;*/
+    outline: 4px  black;
+
+} 
+
+.caja3 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    outline: 4px solid black;
+}
+
+.caja4 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    outline: 4px  black;
+}
