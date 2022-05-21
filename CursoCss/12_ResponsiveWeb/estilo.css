@@ -1,0 +1,37 @@
+*{
+    padding: 0; /*Sin margenes ni espacios extra en toda la página*/
+    margin: 0;
+    font-family: century; /*Letra de fuente*/
+    font-size: 100%;
+
+}
+
+body{
+    border: 4px solid yellow;
+    background-color: #9a9292; /*Color de fondo*/
+
+}
+
+.home{
+    border: 4px solid orange;
+    display: flex;  /*Propiedad para crear nuestra página responsive. Es más fácil usar esta propiedad que otras como float y position*/
+    flex-wrap: wrap;
+}
+
+.in_flex{
+    border: 4px solid green;
+    flex: 1;
+    min-width: 250px; /* Esta propiedad indica que el minimo de ancho que va a tener la pagina es de 250px. También existe el max-width*/
+}
+
+.in_flex div{
+    border: 4px solid red;
+    padding: 1.5625rem;
+    background-color: white;
+    margin: 1.25rem;
+}
+
+.imagen{
+    width: 100%;
+    height: auto;
+}
