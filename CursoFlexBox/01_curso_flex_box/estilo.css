@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    /* HOY APRENDERÉ LA SIGUIENTE PROPIEDAD: DISPLAY FLEX*/
+    display: flex;
+    /* propiedad flex-direccion: column (crea cajas en columnas), column-reverse (cajas en columna pero al revés), row (crea cajas en fila) y row-reverse (cajas en fila pero al revés). ROW VIENE POR DEFECTO EN DISPLAY FLEX*/
+    /* propiedad flex-wrap: nowrap (ubica a todos los divs en linea, wrap (si no caben los divs en una línea los ubica en la siguiente). NOWRAP VIENE POR DEFECTO EN FLEX-WRAP. También existe nowrap-reverse y wrap-reverse.*/
+    /* propiedad flex-flow: sirve para asignar flex-direcion y flex-wrap en una sola línea de código. La sintaxis es [flex-flow: (prop. flex-direccion) (prop. flexwrap)] Ej:*/
+    flex-flow: row wrap;
+    /* propiedad justify-content: center (centra las cajas), start(alinea a la izquierda), end(alinea a la derecha), space-around (divide el ancho total del contenedor en la cantidad cajas que existen y centra cada caja) y space_between (divide el ancho total en partes iguales para cada caja y las centra, pero las cajas de los extremos se alinean con el borde).*/
+    justify-content: start;
+    /* Si el largo de la página se alarga, también se alargara el largo del contenido. Por ejemplo al darle 400px al heigth, quedarán las cajas de la siguiente forma:  */
+    height: 400px;
+    /* Entonces, podremos usar unas propiedades parecidas a las anteriormente descritas. */
+    /* Propiedad align-items: flex-start (alinea los bloques al inicio "arriba"), center (centra), baseline (ordena el texto de las las cajas en linea con la base del texto) y flex-end (alinea los bloques al final "abajo"). STRETCH VIENE POR DEFECTO*/
+    align-items: center;
+    background-color: rgb(110, 185, 250);
+    padding: 10px;
+    border: 2px solid black;
+}
+.flex-container div{
+    background-color: rgb(215, 154, 154);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
+

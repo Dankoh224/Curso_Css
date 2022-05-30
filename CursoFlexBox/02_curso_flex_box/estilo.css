@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    height: 400px;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+    background-color: rgb(110, 185, 250);
+    padding: 10px;
+    border: 2px solid black;
+}
+.flex-container div{
+    background-color: rgb(215, 154, 154);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    border: 2px solid black;
+}
