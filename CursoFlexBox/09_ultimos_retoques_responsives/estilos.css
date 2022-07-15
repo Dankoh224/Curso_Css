@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+a{
+    text-decoration: none; /* todas las "a" eliminarán los subrayados */
+}
+.margen_interno{ /* Este es un truco para aplicar un margen interno a las secciones de header, section y footer. Se copia y se pega en las clases recién mencionadas. */
+    padding: 0 50px;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(imagenes/bg-2.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgba(0,0,0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .logo a:hover{ /* Esta propiedad cambia el color del logo al pasar el cursor*/
+                    color: #343434; 
+                }
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+                    padding: 0 10px; /* Padding entre los elementos del menú */
+                    letter-spacing: 2px; /* Espaciado entre letras */
+                }
+                .nav a:hover{
+                    color: #343434;
+                }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 0 10px; /* Padding entre los elementos del menú */
+                }
+                .social a:hover{
+                    color: #343434;
+                }
+        .texto_principal{
+            /* background: #f07b3f; Eliminamos este fondo para que solo aparezca el texto*/
+            height: 580px;
+            display: flex;
+            align-items: center;
+        }
+            h1{
+                /* background: #ffd460; Eliminamos el fondo y le damos estilo: */
+                font-family: 'lora', serif;
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+    .section{
+        /* background: #000; */
+        background: #f7f7f7;
+        display: flex;
+    }
+        .articulos{
+            /* background: #4e4e6a; Cambiamos el color del fondo para que las letras puedan verse: */
+            background: #f7f7f7;
+            flex: 2 1 70%; /* Se define manualmente el ancho que debe tomar, de auto a 70% y al ASAID darle 30%. */
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                /* background: #1f6cb0; */
+                flex: 1 1 40%;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0;
+                flex: 1 1 45%;
+                background: #ececec ;
+            }
+            .article img{
+                width: 100%;
+            }
+            .article a{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px;
+                background: #000;
+                margin: 10px 0;
+                display: inline-block; /* Agregamos esta propiedad porque el LEER MÁS se posicionaba como NO BLOQUE. */
+            }
+            .article a:hover{ /* Color para el LEER MÁS. */
+                background: #546cc3;
+            }
+            h3{ /* Estilo para las letras de los article, además se sube el texto para que quede sobre la imagen. */
+                color: #fff;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+            }
+            h2{ /* Estilo para el titulo de la noticia. */
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0 0 10px 0;
+                color: #fff;
+            }
+            .navegacion{
+                /* background: #70a3c4; Y cambiamos el color a negro. */
+                background: #000 ;
+                flex: 1 1 100%;
+                margin: 10px 10px 0 0; /* Agregamos este margin porque quedó descuadrado el nav. Este es el mismo margen que le dimos en article, por lo tanto lo copié desde ahí y lo traje para acá. */
+            }
+            .navegacion a{ /* Agregamos estilo a la barra de navegacion inferior: */
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            /* background: #f73f52; */
+            flex: 2 1 30%; /* Se modifica el ancho asignandole un 30%, para que calce con ARTICULO. */
+            margin: 10px 5px 10px 0;
+        }
+            .aside img{
+                width: 100%;
+            }
+            h4{
+                background: #000;
+                color: #fff;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+            .publicidad{
+                /* background: #ffea85; */
+            }
+
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            /* background: #e6af2e; Eliminamos este color de fondo*/
+            /* width: 300px; Y cambiamos este ancho por un align center*/
+            text-align: center;
+        }
+        .pie a{
+            color: #fff;
+            font-size: 11px;
+            padding: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+@media all and (max-width: 800px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
