@@ -180,7 +180,7 @@ a{
             letter-spacing: 2px;
         }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 1085px){ /* Cambiamos la medida del media query a donde comienzan a existir los problemas */
     .section{
         flex-direction: column;
     }
@@ -192,11 +192,26 @@ a{
         display: flex;
         justify-content: center;
     }
+    h1{ /* Cambiamos el estilo al h1 para que se achique junto a todo lo demás*/
+        font-size: 18px;
+    }
+    .texto_principal{ /* Cambiamos el estilo a la imagen para que se achique junto a todo lo demás*/
+        height: 440px;
+    }
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 786px){
     .articulos{
         flex-direction: column;
+    }
+}
+
+@media all and (max-width: 655px){ /* Creamos otra media query para eliminar las palabras del menu */
+    .off{ /* Esta clase la inventamos en html para eliminar las palabras del menú */
+        display: none;
+    }
+    .nav a{ /* Aquí agrandamos un poco los iconos del menú */
+        font-size: 23px;
     }
 }
 
